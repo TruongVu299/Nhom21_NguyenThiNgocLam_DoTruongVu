@@ -1,0 +1,109 @@
+/* trang đăng ký thành viên */
+.register-container {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+}
+
+/* định dạng cho register box */
+.register-box {
+    margin: 0 auto;
+    width: 500px;
+    padding: 20px 30px;
+    background-color: #fff;
+    box-shadow: rgba(82, 172, 236, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+/* điều chỉnh tiêu đề */
+.register-box h2 {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 15px;
+    color: var(--primary-color);
+}
+
+/* điều chỉnh khoảng cách 
+giữa các form-group */
+.form-group {
+    margin-top: 20px;
+}
+
+/* định dạng cho các label */
+.form-label {
+    display: block;
+    margin-bottom: 7px;
+    font-size: 15px;
+}
+
+/* định dạng cho các thẻ input có 
+   type là email và text */
+.form-group input[type="email"],
+.form-group input[type="text"] {
+    border: 1px solid rgb(107, 222, 243);
+    outline: none;
+    width: 100%;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+/* định dạng cho các phần 
+   giới tính và sở thích */
+.check-box,
+.radio-box {
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border: 1px solid rgb(82, 152, 196);
+}
+
+/* định dạng cho các label của 
+   phần giới tính và sở thích */
+.check-box label,
+.radio-box label {
+    margin-left: 5px;
+    margin-right: 15px;
+    margin-top: 1px;
+}
+
+/* định dạng cho select box */
+.form-group select {
+    width: 100%;
+    height: 30px;
+    padding: 0 10px;
+    border-radius: 5px;
+    outline: none;
+}
+
+/* định dạng cho phần ghi chú */
+.form-group textarea {
+    width: 100%;
+    height: 60px;
+    outline: none;
+    border: 1px solid rgb(28, 17, 151);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* định dạng cho nút đăng ký */
+.register-submit {
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+    margin-right: 15px;
+    padding: 8px 0;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    color: #31bae0 ;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--primary-color);
+}

@@ -1,0 +1,57 @@
+
+.form-container {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  width: 600px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(247, 245, 242);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#form-donate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(6, 6, 6, 0.731);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+caption {
+  font-weight: 600;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+button {
+  width: 60px;
+  height: 25px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 6px;
+  text-align: center;
+}
+.ti-close {
+  font-size: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+}

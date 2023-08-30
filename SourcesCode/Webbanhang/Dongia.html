@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Dongia.css">
+</head>
+<body>
+    <div id="form-donate">
+        <div class="form-container">
+            <div class="ti-close" onclick="closeDonateForm()"></div>
+            <label for="priceFilter">Chọn mức giá:</label>
+            <select id="priceFilter" onchange="filterByPrice()">
+                <option value="all">Tất cả</option>
+                <option value="1000000">Dưới 150,000</option>
+                <option value="1000000-1500000">100,000 - 3000.000</option>
+            </select>
+            <table id="productTable">
+                <caption>CÁC MÓN ĂN</caption>
+                <thead>
+                    <tr>
+                        <th><input type="checkbox" id="chonhet"></th>
+                        <th>Tên món ăn</th>
+                        <th>Giá</th>
+                        <th>Số lượng</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" class="chon" onchange="daott(this)"></td>
+                        <td>Bánh mì - Sốt - Salad</td>
+                        <td>250000</td>
+                        <td><input type="number" class="quantity" value="1" onchange="updateTotal(this)" disabled></td>
+                        <td>250000</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="chon" onchange="daott(this)"></td>
+                        <td>Bánh mì - Trứng - Bơ</td>
+                        <td>150000</td>
+                        <td><input type="number" class="quantity" value="1" onchange="updateTotal(this)" disabled></td>
+                        <td>150000</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="chon" onchange="daott(this)"></td>
+                        <td>Salad - Bơ - Trứng</td>
+                        <td>100000</td>
+                        <td><input type="number" class="quantity" value="1" onchange="updateTotal(this)" disabled></td>
+                        <td>100000</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="chon" onchange="daott(this)"></td>
+                        <td>Burger - Gà chiên</td>
+                        <td>150000</td>
+                        <td><input type="number" class="quantity" value="1" onchange="updateTotal(this)" disabled></td>
+                        <td>150000</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="chon" onchange="daott(this)"></td>
+                        <td>Bánh Tortilla - Thuần chay</td>
+                        <td>100000</td>
+                        <td><input type="number" class="quantity" value="1" onchange="updateTotal(this)" disabled></td>
+                        <td>100000</td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="chon" onchange="daott(this)"></td>
+                        <td>Cà ri - Cá - Bánh mì</td>
+                        <td>250000</td>
+                        <td><input type="number" class="quantity" value="1" onchange="updateTotal(this)" disabled></td>
+                        <td>250000</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4" style="text-align: right;"><strong>Tổng cộng:</strong></td>
+                        <td><strong><span id="grandTotal">0</span></strong></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <hr style="margin: 20px 0;" />
+
+        </div>
+    </div>
+    <script src="Dongia.js"></script>
+</body>
+</html>

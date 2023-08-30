@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,200;1,400;1,500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+#wrapper {
+    /*kich thuoc mang hinh la 1280 x 7208 */
+    width: 100%;
+    height: 100%;
+}
+#header {
+    width: 100%;
+    padding: 0px 30px;
+    margin-top: 33px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
